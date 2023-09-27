@@ -36,6 +36,7 @@ io.on('connection', (socket) => {
             room: user.room,
             users: getUsersInRoom(user.room)
         })
+        console.log(`${user.username} is joined in ${user.room}`);
 
         callback()
 
